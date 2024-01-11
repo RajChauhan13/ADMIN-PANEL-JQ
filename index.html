@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PANNEL</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans&family=Kanit&family=Pacifico&family=Red+Hat+Display&family=Signika&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- box icons css  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- jQuery cdn  -->
+    <script src="js/cdn.js"></script>
+
+
+</head>
+
+<body>
+    <!--------------- LOADER --------------->
+    <div class="loader_body">
+        <div class="loader"></div>
+    </div>
+
+    <!--------------- HEADER --------------->
+    <header>
+
+        <!-------- logo -------->
+
+        <a href="#" class="logo">
+            <img class="logo_img" src="img/logo_w.png">
+        </a>
+
+        <!-------- menu -------->
+
+        <div class="menu_logo ">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <!------- search ------->
+
+        <div id="search">
+            <i class='bx bx-search' style="cursor: pointer;"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- theme -->
+        <div class="theme">
+            <i class='bx bx-moon'></i>
+            <!-- <i  class='bx bx-sun'></i>  -->
+            <!-- <i class="fas fa-sun"></i> -->
+            <!-- <i class="fas fa-moon"></i> -->
+            <!-- <box-icon name='moon' class="themeicn"></box-icon> -->
+            <!-- <box-icon name='sun' type='solid' ></box-icon> -->
+        </div>
+
+
+        <!------- full_screen ------->
+
+        <div id="full_screen">
+            <i class='bx bx-fullscreen'></i>
+        </div>
+
+
+        <!--------- country --------->
+
+        <div class="country">
+            <img src="img/india.jpg" alt="">
+            <p>English</p>
+
+            <!-- country_dd  -->
+            <div class="country_dd">
+                <div class="country_options" style="padding-top: 15px;"> <img style="margin-right: 8px;"
+                        src="img/germany.png" alt="">
+                    <p>Germany</p>
+                </div>
+
+                <div class="country_options"> <img style="margin-right: 8px;" src="img/italy.png" alt="">
+                    <p>Italy</p>
+                </div>
+
+                <div class="country_options"> <img style="margin-right: 8px;" src="img/russia.png" alt="">
+                    <p>Russia</p>
+                </div>
+
+                <div class="country_options" style="padding-bottom: 15px;"> <img style="margin-right: 8px;"
+                        src="img/french.png" alt="">
+                    <p>French</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!------------ message ------------>
+
+        <div class="message">
+            <i class='bx bx-comment-minus'></i>
+
+            <!-- bubble -->
+            <div class="mssg_bubble">4</div>
+
+            <!-- message_dd  -->
+            <div class="message_dd">
+
+                <div class="message_dd_2">
+                    <!-- top  -->
+                    <div class="mssg_top">
+                        <p>Message</p>
+                        <p>New</p>
+                    </div>
+
+
+                    <!-- 1  -->
+                    <div class="mssg_box">
+                        <div class="mssg_profile">
+                            <img src="img/msg_p1.jpg" alt="">
+                        </div>
+                        <!-- p1  -->
+                        <p class="msg_p1"> Joan Powell <br>
+                            <span style="font-size: 13px; color: var(--message-t1);">Added a new comment.</span>
+                        </p>
+
+                        <!-- p2  -->
+                        <p style="margin-left: 30px;" class="msg_p2">Now</p>
+                    </div>
+
+                    <!-- 2  -->
+                    <div class="mssg_box">
+                        <div class="mssg_profile">
+                            <img src="img/msg_p2.jpg" alt="">
+                        </div>
+                        <!-- p1  -->
+                        <p class="msg_p1">Julian Kerr <br>
+                            <span style="font-size: 13px; color: var(--message-t1);">Please check you mail.</span>
+                        </p>
+
+                        <!-- p2  -->
+                        <p style="margin-left: 30px;" class="msg_p2">1h ago</p>
+                    </div>
+
+                    <!-- 3  -->
+                    <div class="mssg_box">
+                        <div class="mssg_profile">
+                            <img src="img/msg_p3.jpg" alt="">
+                        </div>
+                        <!-- p1  -->
+                        <p class="msg_p1">John Deo <br>
+                            <span style="font-size: 13px; color: var(--message-t1);">Hey! there I'm available</span>
+                        </p>
+
+                        <!-- p2  -->
+                        <p style="margin-left: 30px;" class="msg_p2">4h ago</p>
+                    </div>
+
+                    <!-- 4  -->
+                    <div class="mssg_box" style="border: none;">
+                        <div class="mssg_profile ">
+                            <img src="img/msg_p4.jpg" alt="">
+                        </div>
+
+                        <!-- p1  -->
+                        <p class="msg_p1">Maricel Villalon <br>
+                            <span style="font-size: 13px; color: var(--message-t1);">Created a new blog post.</span>
+                        </p>
+
+                        <!-- p2  -->
+                        <p style="margin-left: 30px;" class="msg_p2">13h ago</p>
+                    </div>
+
+
+                    <!-- last  -->
+                    <div class="mssg_last">
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------- notification -------->
+
+        <div class="notification">
+            <i class='bx bx-bell'></i>
+
+            <!-- bubble -->
+            <div class="noti_bubble">4</div>
+
+            <div class="noti_dd">
+                <div class="noti_dd_2">
+
+                    <!-- top  -->
+                    <div class="noti_top">
+                        <p>Notifications</p>
+                        <p>New</p>
+                    </div>
+
+
+                    <!-- 1  -->
+                    <div class="noti_box">
+
+                        <div class="noti_profile np_1">
+                            <i class='bx bxs-envelope'></i>
+                        </div>
+                        <!-- p1  -->
+                        <p class="noti_p1">Message Sent.<br>
+                            <span style="color: var(--message-time);">45 minutes ago</span>
+                        </p>
+
+                    </div>
+
+                    <!-- 2  -->
+                    <div class="noti_box">
+
+                        <div class="noti_profile np_2">
+                            <i class='bx bxs-cart-alt'></i>
+                        </div>
+                        <!-- p1  -->
+                        <p class="noti_p1">Event Started<br>
+                            <span style="color: var(--message-time);">3 hours ago</span>
+                        </p>
+
+                    </div>
+
+                    <!-- 3  -->
+                    <div class="noti_box">
+
+                        <div class="noti_profile np_3">
+                            <i class='bx bxs-gift'></i>
+                        </div>
+                        <!-- p1  -->
+                        <p class="noti_p1">Order Placed.<br>
+                            <span style="color: var(--message-time);">5 hours ago</span>
+                        </p>
+
+                    </div>
+
+                    <!-- 4  -->
+                    <div class="noti_box" style="border: none;">
+
+                        <div class="noti_profile np_4">
+                            <i class='bx bxl-windows'></i>
+                        </div>
+
+                        <!-- p1  -->
+                        <p class="noti_p1">Your Admin Launched<br>
+                            <span style="color: var(--message-time);">1 day ago</span>
+                        </p>
+
+                    </div>
+
+
+                    <!-- last  -->
+                    <div class="noti_last">
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------- profile --------->
+
+        <div class="profile">
+
+            <img src="img/pro_pic.png" alt="">
+
+            <!-- profile_dd  -->
+
+            <div class="profile_dd">
+
+                <h4>Raj Chauhan</h4>
+                <p>Web Designer</p>
+
+                <div class="box profile-box">
+                    <i class='bx bx-user'></i><a href="">My Profile</a>
+                </div>
+
+                <div class="box">
+                    <i class='bx bx-edit'></i><a href="">Edit Profile</a>
+                </div>
+
+                <div class="box">
+                    <i class='bx bx-cog'></i><a href="">Account Settings</a>
+                </div>
+
+                <div class="box">
+                    <i class="far fa-compass"></i><a href="">Activity</a>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-sign-out-alt"></i></span><a href="">Logout</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!----------------- SIDEBAR PARENT ----------------->
+
+    <section class="sidebar_parent">
+
+        <!----------- SIDEBAR ----------->
+
+        <section class="sidebar">
+
+            <ul class="side-menu">
+
+                <!-- Dashboard  -->
+                <li><a href="#" class="active"><i style="color: white;" class='bx bxs-dashboard icon'></i> Dashboard</a>
+                </li>
+
+                <!-- Main  -->
+                <li class="divider" data-text="main">Main</li>
+                <li>
+                    <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i
+                            class='bx bx-chevron-right icon-right'></i></a>
+
+                    <ul class="side-dropdown">
+                        <li><a href="#">Alert</a></li>
+                        <li><a href="#">Badges</a></li>
+                        <li><a href="#">Breadcrumbs</a></li>
+                        <li><a href="#">Button</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class='bx bx-map-alt icon'></i> Maps <i
+                            class='bx bx-chevron-right icon-right'></i></a>
+
+                    <ul class="side-dropdown">
+                        <li><a href="#">Leaflet Maps</a></li>
+                        <li><a href="#">Vector Maps</a></li>
+                        <li><a href="#">Mapel Maps</a></li>
+                    </ul>
+                </li>
+
+                <!-- Charts  -->
+                <li class="chart"><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+
+                <!-- Widgets  -->
+                <li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+
+                <!-- Apps  -->
+                <li class="divider" data-text="main">Applications</li>
+                <li>
+                    <a href="#"><i class='bx bx-category-alt icon'></i> Apps <i
+                            class='bx bx-chevron-right icon-right'></i></a>
+
+                    <ul class="side-dropdown">
+                        <li><a href="#">Mail</a></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">File Manager</a></li>
+                    </ul>
+                </li>
+
+                <!-- Table & Forms  -->
+                <li class="divider" data-text="table and forms">Table and forms</li>
+
+                <!-- Tables  -->
+                <li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
+
+                <!-- Forms  -->
+                <li>
+                    <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i
+                            class='bx bx-chevron-right icon-right'></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#">Basic</a></li>
+                        <li><a href="#">Select</a></li>
+                        <li><a href="#">Checkbox</a></li>
+                        <li><a href="#">Radio</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Ads  -->
+            <div class="ads">
+                <div class="wrapper">
+                    <a href="#" class="btn-upgrade">Upgrade</a>
+                    <p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!--------------------- MAIN SECTION  --------------------->
+
+    <section id="main_section">
+        <!------------ MAIN BANNER ------------->
+        <section class="main_banner">
+
+            <!-- Heading  -->
+            <div class="mb_heading">
+
+                <!-- text -->
+                <div class="head_text">
+
+                    <p class="dshbrd">Home &nbsp; / &nbsp; <span style="color: var(--primary-color);"> Dashboard</span>
+                    </p>
+
+                    <h1>Hi <span style="color: var(--primary-color);"> Venom</span> , Welcome back</h1>
+
+                    <p>Very detailed & featured admin.</p>
+
+                </div>
+
+
+                <!--------- Graph --------->
+
+                <div class="head_graph_con">
+
+                    <div class="con_box con_box1">
+                        <div id="con_spark1"></div>
+                    </div>
+
+                    <div class="con_box con_box2">
+                        <div id="con_spark2"></div>
+                    </div>
+
+                    <div class="con_box con_box3">
+                        <div id="con_spark3"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-------- Dashboard -------->
+
+            <div class="dash_sparkboxes">
+
+                <div class="dash_box dash_box1">
+                    <div class="dash_details">
+                        <p>Total Sales</p>
+                        <h4>3257</h4>
+                        <p>This Month</p>
+                    </div>
+                    <div id="spark1"></div>
+                </div>
+
+                <div class="dash_box dash_box2">
+                    <div class="dash_details">
+                        <p>Total Stats</p>
+                        <h4>1678</h4>
+                        <p>Month</p>
+                    </div>
+                    <div id="spark2"></div>
+                </div>
+
+                <div class="dash_box dash_box3">
+                    <div class="dash_details">
+                        <p>Total Income</p>
+                        <h4>$2590</h4>
+                        <p>Month</p>
+                    </div>
+                    <div id="spark3"></div>
+                </div>
+
+                <div class="dash_box dash_box4">
+                    <div class="dash_details">
+                        <p>Total Tax</p>
+                        <h4>$1954</h4>
+                        <p>Month</p>
+                    </div>
+                    <div id="spark4"></div>
+                </div>
+
+            </div>
+
+
+            <!-- MAIN BANNER SPILE AREA CHART -->
+            <!-- <div class="chart_1">
+                <div id="chart"></div>
+                <div style="border: 1px solid red;" class="chart2">
+                </div>
+            </div> -->
+
+            <!-- MAIN BANNER  CHART -->
+            <div class="main_chart">
+                <div class="chart_box columnbox mt-4">
+                    <div id="columnchart"></div>
+                </div>
+
+                <div class="chart_box  mt-4">
+                    <div id="linechart"></div>
+                </div>
+            </div>
+
+
+
+            <!-- ADMIN CONTENT  -->
+            <!-- <div class="admin_content"> -->
+            <div class="table-data">
+                <div class="order">
+                    <div class="head">
+                        <h3>Recent Orders</h3>
+                        <i class='bx bx-search'></i>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Items</th>
+                                <th>Date Order</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="img/table1.jpg">
+                                    <p>Books</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/table2.jpg">
+                                    <p>Sports</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/table3.jpg">
+                                    <p>Accesories</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status process">Process</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/table4.jpg">
+                                    <p>Watches</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/table5.jpg">
+                                    <p>Speakers</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="todo">
+                    <div class="head">
+                        <h3>Recent Activity</h3>
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <ul class="todo-list">
+                        <li class="completed">
+                            <p>New Products - <span style="font-size: 14px; color: var(--blue);">52% new
+                                    products</span> </p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <p>New Sale - <span style="font-size: 14px; color:red;">76% Profit earned</span></p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <p>New Customers - <span style="font-size: 14px; color: green;">24% New
+                                    cusotumers</span></p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <p>New Reviews - <span style="font-size: 14px; color: var(--orange);">96% Positive
+                                    reviews</span></p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <p>Customers Visits - <span style="font-size: 14px; color: var(--blue);">33% Target
+                                    achived</span></p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <p>Sale Consistency - <span style="font-size: 14px; color: rgb(0, 192, 134);">90%
+                                    Growth</span></p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+
+
+
+            <!-- CHATS -->
+            <div class="admin_chats">
+                <div class="content-data">
+                    <div class="head">
+                        <h3>Chatbox</h3>
+                    </div>
+                    <div class="chat-box">
+                        <p class="day"><span>Today</span></p>
+                        <div class="msg">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                            <div class="chat">
+                                <div class="profile">
+                                    <span class="username">Alan</span>
+                                    <span class="time">18:30</span>
+                                </div>
+                                <p style="margin-top: 10px;">Hello</p>
+                            </div>
+                        </div>
+                        <div class="msg me">
+                            <div class="chat">
+                                <div class="profile">
+                                    <span class="time">18:30</span>
+                                </div>
+                                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Eaque voluptatum eos quam
+                                    dolores eligendi exercitationem animi nobis reprehenderit laborum! Nulla.</p>
+                            </div>
+                        </div>
+                        <div class="msg me">
+                            <div class="chat">
+                                <div class="profile">
+                                    <span class="time">18:30</span>
+                                </div>
+                                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ipsam, architecto!</p>
+                            </div>
+                        </div>
+                        <div class="msg me">
+                            <div class="chat">
+                                <div class="profile">
+                                    <span class="time">18:30</span>
+                                </div>
+                                <p style="margin-bottom: 20px;">Lorem ipsum, dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Type...">
+                            <button type="submit" class="btn-send"><i class='bx bxs-send'></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- PIE CHART  -->
+                <div class="pie_box shadow">
+                    <div id="radialBarBottom"></div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <p> Copyright &copy; 2023 <span> Azea</span>. Designed with ❤️ by <span> Venom</span> All rights reserved.
+            </p>
+        </footer>
+    </section>
+
+
+    <!-- apex charts  -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <!-- box icons  -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- data  -->
+    <script src="js/data.js"></script>
+
+    <!-- script  -->
+    <script src="js/script.js"></script>
+
+    <!-- chart.js -->
+    <script src="js/chart.js"></script>
+
+    <!-- for chart's bars hover shadow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+
+</body>
+
+</html>
